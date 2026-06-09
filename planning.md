@@ -10,7 +10,7 @@
 ## Domain
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
-Domain used were student reviews of Professors in the Computer Science department at the University of Texas at Austin. 
+Domain used were student reviews of Professors in the Computer Science department at the University of Texas at Austin. This unofficial information is important because any university-sourced materials will likely not depict the honest truth a regular student may experience in a specific course from a specific professor. The anonymity provided by the site also allows for individuals to give unrestrained truth that may be found valuable to prospective students. Since universities like to keep a 'clean' reputation, they likely would not include any defects in a professor's teaching strategy that could be detrimental to students.
 ---
 
 ## Documents
@@ -61,7 +61,7 @@ Domain used were student reviews of Professors in the Computer Science departmen
 **Top-k:** 6
 
 **Production tradeoff reflection:**
-Accuracy on domain-specific text would likely be the most important to have with a different model, most universities are one language so multilingual support isn't necessary.
+Accuracy on domain-specific text would likely be the most important to have with a different model. Words pertaining to computer science and common university jargon would help the model interpret the topic of each review along with any feelings attached to what the user is saying. Most universities are one language so multilingual support isn't necessary, but perhaps something more relating to different programming languages and their differences could be useful when mentioned in a review. Context length wouldn't be a large factor since the reviews are not terribly long, but if the documents were longer or if people were allowed to expand on their reviews, then it would be worth nothing when attempting to use a different model.
 
 ---
 
