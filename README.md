@@ -49,13 +49,14 @@ Student reviews of CS professors at the University of Texas at Austin - useful f
 
 **Chunk size:** 500 characters. 
 
-**Overlap:**50 characters. 
+**Overlap:** 50 characters. 
 
-**Why these choices fit your documents:**The documents contain reviews of students with some entries containing additional course information or tags regarding the workload or course design. 500 characters allows for the central review to be retrieved and the additional tags found above and below it. With the main body of the review secured, the overlap is to gather the additional course information(e.g course title, grade the reviewer got, etc) and the tags at the bottom that summarize a bit about the course with the professor. 50 characters is enough to gather any tags/labels that were cut off.
+**Why these choices fit your documents:** The documents contain reviews of students with some entries containing additional course information or tags regarding the workload or course design. 500 characters allows for the central review to be retrieved and the additional tags found above and below it. With the main body of the review secured, the overlap is to gather the additional course information(e.g course title, grade the reviewer got, etc) and the tags at the bottom that summarize a bit about the course with the professor. 50 characters is enough to gather any tags/labels that were cut off.
 
 **Final chunk count:** 110
 
-_____SAMPLE CHUNKS___:
+## SAMPLE CHUNKS
+```text
 Chunk 1 (source: ahmed_gheith.txt):
 Quality
 5.0
@@ -72,7 +73,6 @@ Dr. Gheith is an exceptional professor, and the course is very challenging. Expe
 Lots of homework
 Qual
 ----------------------------------------
-
 Chunk 2 (source: ahmed_gheith.txt):
  the difference in workload.
 Lots of homework
@@ -89,7 +89,6 @@ Grade: B-
 Textbook: N/A
 He is an amazing lecturer and knows everything like the back of his hand whenever students have questions (99% of the time). He doesn't use slides which is sometimes a minus but he makes it engaging enough w/o slides. The projects require 30 hours commitment on avg per week. The class is amazing and I have come out l
 ----------------------------------------
-
 Chunk 3 (source: ahmed_gheith.txt):
 r week. The class is amazing and I have come out learning about operating systems.
 Participation matters
@@ -140,7 +139,7 @@ Textbook: Yes
 Dr.Ravishankar is one of those professors who truly cares about her students. The hate is so unnecessary. It is completely possible to get an A in this class if you participate and stay consistently on top of the material. Totally do-able. She is easily the best professor for this course and I'm ecstatic to take CS 313E with her next sem
 Clear grading criteria
 C
-
+```
 ## Embedding Model
 
 <!-- Name the embedding model you used and explain your choice.
@@ -158,7 +157,8 @@ C
 
 ## Retrieval Test Results
 ----------------------------------------
-what do students day about the lectures provided by Professor Ramsey?
+```text
+QUERY: what do students day about the lectures provided by Professor Ramsey?
 Students have mixed reviews about the lectures provided by Professor Ramsey. Some students mention that she is "not a great lecturer" (carol_ramsey.txt, multiple sources), often gets "lost in lecture" (carol_ramsey.txt, Jan 9th, 2026), and "would often get lost in lecture, made many mistakes" (carol_ramsey.txt, Jan 9th, 2026). Additionally, one student notes that "Ramsey seems like she has no idea what she is talking about, and often even confuses herself when she is teaching" (carol_ramsey.txt, Apr 7th, 2026). However, another student mentions that "Ramsey is super sweet and cares about all her students. Although she is all over the place, she really does try her best to get her students to understand the content" (carol_ramsey.txt, Apr 19th, 2026). Overall, it seems that while Professor Ramsey may not be the strongest lecturer, she is at least trying to engage with her students and make the class enjoyable, with one student even describing her as "hilarious" (carol_ramsey.txt, Jan 19th, 2026, and Mar 6th, 2026).
 • carol_ramsey.txt
 
@@ -215,9 +215,10 @@ She definitely
 ---
 EXPLANATION:
 The chunks are relevant to the query as they are all about Professor Carol Ramsey and they include the word "lecture" and comments about her lecturing abilities.
-
+```
+```text
 ----------------------------------------
-what do students say about Professor Fong's reaction to AI use?
+QUERY: what do students say about Professor Fong's reaction to AI use?
 According to the documents, students say that Professor Fong is "strict about AI" and has a "reporting thing" that can be "cruel" (morgan_fong.txt, May 4th, 2026, and another morgan_fong.txt). One student mentions that their report was dismissed (morgan_fong.txt, May 4th, 2026). Another student states that "of course people are going to use AI, how else are we to learn the material", implying that Professor Fong's reaction to AI use is overly restrictive (morgan_fong.txt, May 3rd, 2026).
 • morgan_fong.txt
 • angela_beasley.txt
@@ -269,7 +270,8 @@ Lots of homework
 ---
 EXPLANATION:
 These top chunks are relevant to the query as they all discuss Professor Fong and they mention the topic of AI. They mention her being "strict about AI", they comment on the use of AI.
-
+```
+```text
 ----------------------------------------
 QUERY: which professor that teaches CS429 or CS429H has the best lectures?
 
@@ -329,7 +331,7 @@ Joshi makes one of the hardest classes for CS majors into an actual joy to learn
 ---
 EXPLANATION:
 The top chunks mention reviews relevant to the course CS429 and lecturing, the most positive ones are seen from Professor Joshi and Gheith with students discussing their excellent lecturing abilities in these reviews.
-
+```
 ----------------------------------------
 ---
 ## Grounded Generation
@@ -356,7 +358,8 @@ Additionally the chunk is labeled by its source text name and professor name."""
 **How source attribution is surfaced in the response:**
 The prompt includes being told to always cite the documents from the answer and the query portion of the pipeline also adds the source text name to the chunks.
 
-##Sample Grounded Generation with Source Attribution
+## Sample Grounded Generation with Source Attribution
+```text
 QUERY: which professor that teaches CS429 or CS429H has the best lectures?
 REPLY: According to the documents, Prashant Joshi (prashant_joshi.txt) and Ahmed Gheith (ahmed_gheith.txt) teach CS429/CS429H. Both professors have received praise for their lectures. However, Ahmed Gheith's lectures are described as "truly amazing" and "amazing" in two separate reviews (ahmed_gheith.txt), while Prashant Joshi's lectures are described as making a hard class "into an actual joy to learn" (prashant_joshi.txt). Additionally, one of Ahmed Gheith's reviews states "The lectures are an absolute delight, he has immense understanding of the material" (ahmed_gheith.txt). Based on this information, it seems that Ahmed Gheith's lectures are considered to be particularly exceptional. (ahmed_gheith.txt, prashant_joshi.txt)
 
@@ -388,6 +391,8 @@ SOURCES:
 QUERY: What is the best off campus dining near UT Austin?
 REPLY:I don't have enough information on that. The provided documents only contain reviews of UT Austin CS professors and do not mention off-campus dining options.
 ---
+```
+
 ## Query Interface
 INPUT: 
 	-textbox labeled 'Your Question' where the user may type in their query for the program.
@@ -396,7 +401,7 @@ OUTPUT:
 	-textbox labeled 'sources' where the name of the documents/sources used to generate the reply
 
 SAMPLE INTERACTION TRANSCRIPT-
-
+```text
 QUERY: what do students say about the coding experience required for Professor Young's course? 
 REPLY: 
 According to the document bill_young.txt, one student mentioned that they had "No coding experience before" and took Professor Young's CS303E class as a pre-req. The student was able to succeed in the class, earning an A grade, but noted that they "really had to put in work to understand the content and do good on tests" and that practice was necessary to develop as a coder. (bill_young.txt)
@@ -405,7 +410,7 @@ SOURCES:
 • bill_young.txt
 • ahmed_gheith.txt
 • prashant_joshi.txt
-
+```
 ---
 ## Evaluation Report
 
