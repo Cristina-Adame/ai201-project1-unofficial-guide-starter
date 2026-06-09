@@ -386,30 +386,128 @@ SOURCES:
 • prashant_joshi.txt
 • veena_ravishankar.txt
 • ahmed_gheith.txt
-
-#Out-of-Scope Query Example with the System's Refusal Response Shown.
+```
+## Out-of-Scope Query Example with the System's Refusal Response Shown.
+``` text
 QUERY: What is the best off campus dining near UT Austin?
 REPLY:I don't have enough information on that. The provided documents only contain reviews of UT Austin CS professors and do not mention off-campus dining options.
 ---
 ```
 
 ## Query Interface
-INPUT: 
-	-textbox labeled 'Your Question' where the user may type in their query for the program.
-OUTPUT:
-	-textbox labeled 'answer' where query reply is generated with cited sources in the response
-	-textbox labeled 'sources' where the name of the documents/sources used to generate the reply
+INPUT:   
+	- textbox labeled 'your question' where the user may type in their query for the program.  
+	
+OUTPUT:  
+	- textbox labeled 'answer' where query reply is generated with cited sources in the response.  
+	- textbox labeled 'sources' where the name of the documents/sources used to generate the reply.  
+	- textbox labeled 'retrieved chunks' where the chunks used to the reply are dislayed.  
 
 SAMPLE INTERACTION TRANSCRIPT-
 ```text
-QUERY: what do students say about the coding experience required for Professor Young's course? 
-REPLY: 
-According to the document bill_young.txt, one student mentioned that they had "No coding experience before" and took Professor Young's CS303E class as a pre-req. The student was able to succeed in the class, earning an A grade, but noted that they "really had to put in work to understand the content and do good on tests" and that practice was necessary to develop as a coder. (bill_young.txt)
+QUERY: what do students say about the coding experience required for Professor Young's course?
+
+REPLY: According to the document bill_young.txt, one student mentioned that they had "No coding experience before" and took Professor Young's CS303E class as a pre-req. The student was able to succeed in the class, earning an A grade, but noted that they "really had to put in work to understand the content and do good on tests" and that practice was necessary to develop as a coder.(bill_young.txt)
+
 SOURCES:
 • morgan_fong.txt
 • bill_young.txt
 • ahmed_gheith.txt
 • prashant_joshi.txt
+
+RETRIVED CHUNKS:
+Chunk 1 (source: bill_young.txt | distance: 0.909)
+Quality
+4.0
+Difficulty
+3.0
+CS303E
+May 28th, 2026
+For Credit: Yes
+Attendance: Not Mandatory
+Would Take Again: Yes
+Grade: A
+Textbook: N/A
+No coding experience before. I took this class as a pre-req. The end of the course got pretty confusing. I really had to put in work to understand the content and do good on tests. The homework grading is pretty meticulous, but it's all to develop you as a coder. To get good and understand, practice!
+Lots of homework
+Quality
+3.0
+Difficulty
+3.0
+CS303E
+May 13th, 2
+----------------------------------------
+Chunk 2 (source: morgan_fong.txt | distance: 0.991)
+Quality
+1.0
+Difficulty
+4.0
+cs313e
+May 12th, 2026
+For Credit: Yes
+Attendance: Not Mandatory
+Grade: A-
+Textbook: Yes
+Flipped classroom with very brief lectures, expect to self-teach before each class. Weekly programming assignments are much more difficult. Exams are difficult largely due to deliberate trick questions, poorly phrased, ambiguous prompts, and needlessly rigid grading. "Extra credit opportunities" are not really optional given the grading scheme
+Tough grader
+Get ready to read
+Lots of 
+----------------------------------------
+Chunk 3 (source: morgan_fong.txt | distance: 0.992)
+ndance: Not Mandatory
+Grade: Not sure yet
+Textbook: Yes
+Professor Fong has a flipped classroom with a textbook you teach yourself from, and then x2 a week, problem-solving sessions where she briefly touches on the material. The programming assignments are very difficult, TAs are somewhat helpful. Exams are easy. The reporting thing is cruel, considering there was no warning, but understandable.
+Get ready to read
+Lots of homework
+----------------------------------------
+Chunk 4 (source: morgan_fong.txt | distance: 1.002)
+nce: Not Mandatory
+Grade: F
+Besides the AI stuff she is just not a good professor. I dont want to repeat what others are saying but she just doesn't teach that well. She presents the slides and then says "have fun coding" and walks around the classroom. She asks us to ask the TA if we have questions. Of course people are going to use AI how else are we to learn the material
+Quality
+1.0
+Difficulty
+5.0
+cs313e
+May 3rd, 2026
+For Credit: Yes
+Attendance: Not Mandatory
+Textbook: Yes
+Besides the fact th
+----------------------------------------
+Chunk 5 (source: ahmed_gheith.txt | distance: 1.029)
+Quality
+5.0
+Difficulty
+5.0
+CS429H
+Apr 28th, 2026
+For Credit: Yes
+Attendance: Not Mandatory
+Would Take Again: Yes
+Grade: Not sure yet
+Textbook: N/A
+Dr. Gheith is an exceptional professor, and the course is very challenging. Expect 30+ hours a week on the projects. However, it seems the majority of students use AI on the programming assignments and TAs/professor don't seem to care to punish cheaters (even blatant cases), which is quite unfair given the difference in workload.
+Lots of homework
+Qual
+----------------------------------------
+Chunk 6 (source: veena_ravishankar.txt | distance: 1.050)
+d. The course is quite difficult overall so make sure to go to OH.
+Caring
+Test heavy
+Quality
+1.0
+Difficulty
+5.0
+CS303E
+Apr 9th, 2026
+For Credit: Yes
+Attendance: Not Mandatory
+Grade: B-
+Textbook: Yes
+The programming assignments get increasingly hard through the semseter. There are many TA's but they have not been particulary active in helping students who have trouble with sessions being timed out in Gradescope. All assignments are graded with the auto-grader and no partial credit is given if you
+----------------------------------------
 ```
 ---
 ## Evaluation Report
