@@ -1,0 +1,142 @@
+Quality
+3.0
+Difficulty
+1.0
+CS373
+May 2nd, 2026
+For Credit: Yes
+Attendance: Mandatory
+Grade: A
+Textbook: N/A
+The class was well-organized and clear, with mandatory attendance due to daily quizzes and cold calls. There were two exams based mostly on past quiz questions, and grading was fair with relatively easy content. However, Professor Downing sometimes made students feel pressured and belittled for not recalling something during cold calls.
+
+Quality
+4.0
+Difficulty
+2.0
+CS373
+May 1st, 2026
+For Credit: Yes
+Attendance: Mandatory
+Would Take Again: Yes
+Grade: A
+Textbook: N/A
+I think SWE is one of the most structured classes I've been in, but don't expect to learn too much inside class. The cold calling and attendance kinda break the flow of the lectures. The main group project is full-stack, you learn a lot from it, but it isn't tied to lecture content. Lectures are Python tricks really, I'd take it as a 2nd/3rd UDE.
+Participation matters
+Group projects
+Clear grading criteria
+
+Quality
+4.0
+Difficulty
+3.0
+CS373
+Apr 29th, 2026
+For Credit: Yes
+Attendance: Mandatory
+Would Take Again: Yes
+Grade: A
+Textbook: N/A
+The lectures are mostly a Python tutorial, with other subjects sprinkled in. There is an overarching web development project, where your randomly selected teammates determine the overall difficulty of the class. There is no correlation between the lecture content and project. Honestly, I felt like there wasn't much I learned from the class...
+
+Quality
+2.0
+Difficulty
+2.0
+CS373
+Apr 13th, 2025
+For Credit: Yes
+Attendance: Mandatory
+Would Take Again: Yes
+Grade: A
+Textbook: N/A
+I do not see why people like him so much. The lectures are unstructured and seemingly cover random topics/trivia questions about Python rather than "software engineering." The class was very easy. The term project was to create a website, which was not very exciting. Not sure what I learned, but it all you want is an easy A, go for it.
+
+Quality
+5.0
+Difficulty
+3.0
+CS371P
+Dec 8th, 2024
+For Credit: Yes
+Attendance: Mandatory
+Would Take Again: Yes
+Grade: B+
+Textbook: N/A
+Cold calls so you do have to go to class, first few projects were very easy last 2 were more time consuming so start early. No exams but uses EMRN grading scale so if you miss a lot of quizzes but do good on everything else your grade is based on the lowest category. Very kind and does help you in class!
+Participation matters
+Clear grading criteria
+Inspirational
+
+Quality
+3.0
+Difficulty
+3.0
+CS373
+Jul 6th, 2024
+For Credit: Yes
+Attendance: Mandatory
+Would Take Again: Yes
+Grade: A
+Textbook: N/A
+SWE (Software Engineering) is an upper div class at UT Austin characterized by clear grading criteria in the form of weekly exercises, attendance quizzes, the final group project, blog posts and discussing CS-themed papers he shares with us. The quizzes are the most difficult part and they mainly cover the exact material from the last week lecture.
+EXTRA CREDIT
+Group projects
+Clear grading criteria
+
+Quality
+3.0
+Difficulty
+2.0
+CS371P
+May 2nd, 2024
+For Credit: Yes
+Attendance: Mandatory
+Would Take Again: Yes
+Grade: A
+Textbook: N/A
+Downing lectures were very syntax specific to C++. We didn't really learn broad Object Oriented concepts in class but instead read articles asynchronously. Attendance matters as we had a quiz at the start of every class. No exams. Projects were doable and fair grading.
+
+Quality
+4.0
+Difficulty
+3.0
+CS371P
+Dec 17th, 2023
+For Credit: Yes
+Attendance: Mandatory
+Would Take Again: Yes
+Grade: A
+Textbook: N/A
+Downing brings a lot of energy in his lectures and does a good job covering C++ concepts. However, some lectures feel too focused on syntax and could instead cover general OOP concepts. Projects are fun and Downing is very helpful outside of class. Not a fan of specs grading or HackerRanks, which are really stressful due to the short time given.
+Group projects
+Clear grading criteria
+Respected
+
+Quality
+2.0
+Difficulty
+3.0
+CS104C
+Dec 11th, 2023
+Attendance: Mandatory
+Grade: A
+Textbook: N/A
+Basically you find the bug, and do at least two medium to difficult leetcode problems a week covering the concept you learned that week in class. The class had a lot of honors students that would consider the stuff easy and I would feel really confused when they were explaining things and glossing over others.
+Clear grading criteria
+Lots of homework
+Online Savvy
+
+4.0
+Difficulty
+4.0
+CS373
+May 4th, 2023
+For Credit: Yes
+Attendance: Mandatory
+Grade: A
+Textbook: N/A
+I was super lucky that my teammates were actually good so I enjoyed the main project and did not have much issue with it. The quizzes were pretty tough but if you review the notes and really get a good understanding on the examples the quizzes are doable. Dr. Downing is very accessible outside of class. The TAs are hit or miss.
+Group projects
+Clear grading criteria
+Beware of pop quizzes

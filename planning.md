@@ -10,7 +10,7 @@
 ## Domain
 
 <!-- What domain did you choose? Why is this knowledge valuable and hard to find through official channels? -->
-
+Domain used were student reviews of Professors in the Computer Science department at the University of Texas at Austin. 
 ---
 
 ## Documents
@@ -20,16 +20,16 @@
 
 | # | Source | Description | URL or location |
 |---|--------|-------------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | ahmed_gheith.txt | Variety of student reviews on professor gheith sourced from ratemyprofessor.com | C:\Users\Crist\Downloads\CODEPATH\AI201\project 1\ai201-project1-unofficial-guide-starter\documents\ahmed_gheith.txt |
+| 2 | alison_norman.txt | Variety of student reviews on professor norman sourced from ratemyprofessor.com | C:\Users\Crist\Downloads\CODEPATH\AI201\project 1\ai201-project1-unofficial-guide-starter\documents\alison_norman.txt |
+| 3 | angela_beasley.txt | Variety of student reviews on professor beasley sourced from ratemyprofessor.com | C:\Users\Crist\Downloads\CODEPATH\AI201\project 1\ai201-project1-unofficial-guide-starter\documents\angela_beasley.txt |
+| 4 | bill_young.txt | Variety of student reviews on professor young sourced from ratemyprofessor.com | C:\Users\Crist\Downloads\CODEPATH\AI201\project 1\ai201-project1-unofficial-guide-starter\documents\bill_young.txt |
+| 5 | carol_ramsey.txt | Variety of student reviews on professor ramsey sourced from ratemyprofessor.com | C:\Users\Crist\Downloads\CODEPATH\AI201\project 1\ai201-project1-unofficial-guide-starter\documents\carol_ramsey.txt |
+| 6 | glenn_downing.txt | Variety of student reviews on professor downing sourced from ratemyprofessor.com | C:\Users\Crist\Downloads\CODEPATH\AI201\project 1\ai201-project1-unofficial-guide-starter\documents\glenn_downing.txt |
+| 7 | morgan_fong.txt | Variety of student reviews on professor fong sourced from ratemyprofessor.com | C:\Users\Crist\Downloads\CODEPATH\AI201\project 1\ai201-project1-unofficial-guide-starter\documents\morgan_fong.txt |
+| 8 | prashant_joshi.txt | Variety of student reviews on professor joshi sourced from ratemyprofessor.com | C:\Users\Crist\Downloads\CODEPATH\AI201\project 1\ai201-project1-unofficial-guide-starter\documents\prashant_joshi.txt |
+| 9 | siddhartha_chatterjee.txt | Variety of student reviews on professor chatterjee sourced from ratemyprofessor.com | C:\Users\Crist\Downloads\CODEPATH\AI201\project 1\ai201-project1-unofficial-guide-starter\documents\siddhartha_chatterjee.txt |
+| 10 | veena_ravishankar.txt | Variety of student reviews on professor ravishankar sourced from ratemyprofessor.com | C:\Users\Crist\Downloads\CODEPATH\AI201\project 1\ai201-project1-unofficial-guide-starter\documents\veena_ravishankar.txt |
 
 ---
 
@@ -40,11 +40,11 @@
      numbers fit the structure of your documents.
      A review-heavy corpus warrants different chunking than a long FAQ. -->
 
-**Chunk size:**
+**Chunk size:**500 characters
 
-**Overlap:**
+**Overlap:**50 characters
 
-**Reasoning:**
+**Reasoning:** The reviews contain some amount of tags, labels, and general information about the course before the review, so 500 characters seems to be big enough to capture that. Some reviews are shorter and do not have tags, so a 50 character overlap seems enough to get any information about the course that is a bit outside the review
 
 ---
 
@@ -56,11 +56,12 @@
      would you weigh in choosing a different embedding model — context length, multilingual
      support, accuracy on domain-specific text, latency? -->
 
-**Embedding model:**
+**Embedding model:** all-MiniLM-L6-v2 via sentence-transformers
 
-**Top-k:**
+**Top-k:** 4
 
 **Production tradeoff reflection:**
+Accuracy on domain-specific text would likely be the most important to have with a different model, most universities are one language so multilingual support isn't necessary.
 
 ---
 
@@ -73,11 +74,11 @@
 
 | # | Question | Expected answer |
 |---|----------|-----------------|
-| 1 | | |
-| 2 | | |
-| 3 | | |
-| 4 | | |
-| 5 | | |
+| 1 | what do students say about Professor Fong's reaction to AI use? | She reports any/all/most AI use in her course. |
+| 2 | what do students day about the lectures provided by Professor Ramsey? | Her lectures and lecturing skills are lacking. |
+| 3 | what do students say about the coding experience required for Professor Young's course? | Not for a beginner, students will struggle if they don't have prior experience. |
+| 4 | which professor that teaches CS429 has the best lectures? | Professor Gheith or Joshi, but not Fong or Chatterjee. |
+| 5 | what do reviews say about Professor Ravishankar as a person? | Professor Ravishankar is very kind and cares about her students, even making exams easier to ensure they pass. |
 
 ---
 
@@ -87,9 +88,9 @@
      Consider: noisy or inconsistent documents, missing source attribution, off-topic
      retrieval, chunks that split key information across boundaries. -->
 
-1.
+1. With review length, labels and tags being different lengths or not even being included in each review, there is a concern about chunks splitting in areas that would cut off information.
 
-2.
+2. I am not sure if the document name will be taken into account, it might be the only place where the professor's name is in some of the data. Some people include the professor names in their review but others don't.
 
 ---
 
@@ -116,7 +117,17 @@
      with my specified chunk size and overlap" is a plan. -->
 
 **Milestone 3 — Ingestion and chunking:**
+Claude.
+The chunking strategy section of the planning.md requirements and information about how the documents are formatted.
+It will likely produce some code that will take in the documents and process them into chunks based on my specifics above.
+I will need to actually look at the chunks produce to see if they look around the 500 character size specified.
 
 **Milestone 4 — Embedding and retrieval:**
+Claude
+The retrieval section of the planning.md requirements.
+
 
 **Milestone 5 — Generation and interface:**
+Claude
+The project description, my planning document, and any specifics I have about the interface.
+

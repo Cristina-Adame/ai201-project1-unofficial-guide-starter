@@ -1,0 +1,126 @@
+Quality
+2.0
+Difficulty
+4.0
+CS363M
+May 7th, 2026
+For Credit: Yes
+Attendance: Mandatory
+Textbook: N/A
+SP 26: class was made harder. Back then, cheat sheets were allowed during exams, but no longer permitted. Exam reviews do not cover everything on the exam and requires you to dig thru lecture slides to memorize some very random things other than memorizing how to do the main question types. Consider carefully before signing up.
+Tough grader
+
+Quality
+2.0
+Difficulty
+4.0
+CS363M
+May 6th, 2026
+For Credit: Yes
+Attendance: Mandatory
+Grade: Not sure yet
+Textbook: N/A
+Exams are difficult (only 90 min, no cheatsheet, partial credit tough to get). Exam grades aren't released on time for qdrop, is dismissive of struggling students, and lectures are poorly presented (full lecture material isn't provided properly after class to reference for hw.) Don't take with OS or algo if ur not into the subject, not worth it.
+Tough grader
+Test heavy
+Graded by few things
+
+Quality
+2.0
+Difficulty
+3.0
+CS363M
+May 5th, 2026
+For Credit: Yes
+Attendance: Mandatory
+Grade: Not sure yet
+Textbook: N/A
+Lectures were a bit dry and boring. Exams were often pretty hard and weren't released back to us to look over. HWs were often not too productive and instead was repetitive and didn't really help us understand the content. Overall, ML is a pretty important topic to learn but felt that the content often wasn't conveyed in a good way.
+
+Quality
+1.0
+Difficulty
+3.0
+CS363M
+May 1st, 2026
+For Credit: Yes
+Attendance: Not Mandatory
+Grade: Not sure yet
+Textbook: N/A
+Exams are bad. Trivial things from lectures show up, and when viewing exams (no, your graded exam isn't released to you) she explains how everything is pivotal. Partial credit is bad- get any part wrong = wrong. More stressed about these exam grades than algo. Online class is abysmal- didn't record lectures for the online class separately.
+Tough grader
+Lots of homework
+
+Quality
+5.0
+Difficulty
+2.0
+CS363M
+May 5th, 2025
+For Credit: Yes
+Attendance: Mandatory
+Would Take Again: Yes
+Grade: A
+Textbook: N/A
+Pretty fun and chill class. The lectures were a little slow, but I didn't mind it personally. The projects and homework are easy, especially if you already know Python. I liked the tests most about this class; they weren't free, but were very easy to prepare for and no surprises on the exams.
+Caring
+
+Quality
+5.0
+Difficulty
+3.0
+CS363M
+Feb 3rd, 2025
+For Credit: Yes
+Attendance: Not Mandatory
+Would Take Again: Yes
+Grade: B
+Textbook: Yes
+15-ish practise problems, 6 assignments, 1 final group project, 3 exams. Well-explained, practical lectures and engaging enough, no digital devices in class so bring either printed slides package or notebook. Fair grader and you'll be fine as long as you attend class diligently and revise before exams with a one-page cheat sheet.
+Clear grading criteria
+Lots of homework
+Accessible outside class
+
+Quality
+2.0
+Difficulty
+2.0
+CS363M
+Jan 3rd, 2025
+Grade: A-
+She's a nice person, but I cannot handle her lectures or exams. Most of the exam content was trivial stuff from the lectures, and that seemed a bit like a waste of time. Lectures are slow, and I rewatch them at 2-3x speed online just to get the content. Projects also reinventing the wheel (implement something that exists w/o using that library) :(
+
+
+Quality
+3.0
+Difficulty
+2.0
+CS363M
+Dec 18th, 2024
+For Credit: Yes
+Attendance: Mandatory
+Would Take Again: Yes
+Grade: A
+Textbook: N/A
+Lecture content was slow and wasn't too interesting. Projects were easy to follow and informative, but also weren't too interesting. Exams weren't too bad, as everyone was given a cheat sheet and content wasn't too difficult.
+
+Quality
+3.0
+Difficulty
+3.0
+CS363M
+Dec 3rd, 2024
+Lectures are too slow and long. Very hard to stay engaged during class. Recordings aren't posted until a few days before the test so there is no way to review topics that weren't understood in class. Overall, class wasn't too difficult though.
+
+Quality
+4.0
+Difficulty
+1.0
+CS363M
+Oct 30th, 2024
+For Credit: Yes
+Attendance: Mandatory
+Grade: A-
+Textbook: N/A
+Projects provide nice exposure and experience with a good variety of topics. Constantly raised are societal and ethical concerns about AI and ML related issues, which usually tie in with the class fairly well. Makes good presentation of generalizations on ML, but can lack both mathematical and practical depth. Final project grading can be odd
+Caring
