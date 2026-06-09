@@ -58,7 +58,7 @@ Domain used were student reviews of Professors in the Computer Science departmen
 
 **Embedding model:** all-MiniLM-L6-v2 via sentence-transformers
 
-**Top-k:** 4
+**Top-k:** 6
 
 **Production tradeoff reflection:**
 Accuracy on domain-specific text would likely be the most important to have with a different model, most universities are one language so multilingual support isn't necessary.
@@ -76,8 +76,8 @@ Accuracy on domain-specific text would likely be the most important to have with
 |---|----------|-----------------|
 | 1 | what do students say about Professor Fong's reaction to AI use? | She reports any/all/most AI use in her course. |
 | 2 | what do students day about the lectures provided by Professor Ramsey? | Her lectures and lecturing skills are lacking. |
-| 3 | what do students say about the coding experience required for Professor Young's course? | Not for a beginner, students will struggle if they don't have prior experience. |
-| 4 | which professor that teaches CS429 has the best lectures? | Professor Gheith or Joshi, but not Fong or Chatterjee. |
+| 3 | what do students say about the coding experience required for Professor Young's course? | Not for a beginner, students will struggle if they don't have prior experience.  |
+| 4 | which professor that teaches CS429 or CS429H has the best lectures? | Professor Gheith or Joshi, but not Fong or Chatterjee. |
 | 5 | what do reviews say about Professor Ravishankar as a person? | Professor Ravishankar is very kind and cares about her students, even making exams easier to ensure they pass. |
 
 ---
@@ -102,6 +102,8 @@ Accuracy on domain-specific text would likely be the most important to have with
      You can use ASCII art, a Mermaid diagram, or embed a sketch as an image.
      You'll use this diagram as context when prompting AI tools to implement each stage. -->
 
+Document Ingestion(txt files)→ Chunking(script) → Embedding+Vector Store(sentence-transformers (all-MiniLM-L6-v2))  → Retrieval(ChromaDB) → Generation(Groq (llama-3.3-70b-versatile))
+
 ---
 
 ## AI Tool Plan
@@ -125,9 +127,12 @@ I will need to actually look at the chunks produce to see if they look around th
 **Milestone 4 — Embedding and retrieval:**
 Claude
 The retrieval section of the planning.md requirements.
-
+It produce something that will embed the chunks with the embedding model, sentence-transformers (all-MiniLM-L6-v2), and that will only pull the amount of chunks specified with the retrieval using ChromaDB.
+Testing will have to be through queries to see if any relevant information is brought about.
 
 **Milestone 5 — Generation and interface:**
 Claude
 The project description, my planning document, and any specifics I have about the interface.
+Expect it to produce the working final product with Groq (llama-3.3-70b-versatile).
+Will have to test it with questions specific to the document and questions that involve topics not included.
 
